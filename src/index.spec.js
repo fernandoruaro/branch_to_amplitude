@@ -67,7 +67,10 @@ describe("handler", () => {
       .once()
       .reply(200, "success");
 
-    await index.handler(evt);
+    const apiGatewayEvent = {
+      body: JSON.stringify(evt),
+    };
+    await index.handler(apiGatewayEvent);
     expect(scope.isDone()).to.be.true;
   });
 });

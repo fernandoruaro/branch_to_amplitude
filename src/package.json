@@ -4,7 +4,7 @@
   "description": "Send branch data feed events to amplitude",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 15000"
+    "test": "mocha . --timeout 15000"
   },
   "repository": {
     "type": "git",

@@ -2,6 +2,11 @@ AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: Branch to Amplitude
 
+Parameters:
+  AmplitudeApiKey:
+    Type: String
+    Description: Amplitude Api Key
+
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
   Function:
@@ -14,6 +19,9 @@ Resources:
       CodeUri: src/
       Handler: index.handler
       Runtime: nodejs12.x
+      Environment:
+        Variables:
+          AMPLITUDE_API_KEY: !Ref AmplitudeApiKey
       Events:
         Branch:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
