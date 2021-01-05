@@ -1,7 +1,7 @@
 const got = require("got");
 const FormData = require("form-data");
 
-const PREFIX = "[BRANCH]";
+const PREFIX = "[Branch]";
 
 exports.mapEvent = (branchEvent) => {
   const userProperties = {};
