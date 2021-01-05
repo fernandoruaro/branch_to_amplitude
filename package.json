@@ -1,0 +1,28 @@
+{
+  "name": "branch_to_amplitude",
+  "version": "1.0.0",
+  "description": "Send branch data feed events to amplitude",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha src --timeout 15000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandoruaro/branch_to_amplitude.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandoruaro/branch_to_amplitude/issues"
+  },
+  "homepage": "https://github.com/fernandoruaro/branch_to_amplitude#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nock": "^13.0.5"
+  },
+  "dependencies": {
+    "form-data": "^3.0.0",
+    "got": "^11.8.1"
+  }
+}
