@@ -2,9 +2,9 @@
   "name": "branch_to_amplitude",
   "version": "1.0.0",
   "description": "Send branch data feed events to amplitude",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "mocha src --timeout 15000"
+    "test": "mocha --timeout 15000"
   },
   "repository": {
     "type": "git",
